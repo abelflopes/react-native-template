@@ -12,7 +12,9 @@
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
+    "plugins": ["expo-apple-authentication"],
     "ios": {
+      "usesAppleSignIn": true,
       "supportsTablet": true
     },
     "android": {
