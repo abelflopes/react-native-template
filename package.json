@@ -5,15 +5,21 @@
   "scripts": {
     "prepare": "husky install",
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "eas build -p ios --profile preview",
+    "web": "expo start --web --https",
+    "prebuild": "expo prebuild",
+    "build": "eas build"
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
     "expo": "~49.0.11",
     "expo-apple-authentication": "~6.1.0",
+    "expo-auth-session": "~5.0.2",
+    "expo-crypto": "~12.4.1",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
+    "expo-web-browser": "~12.3.2",
     "jwt-decode": "^3.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,6 +31,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@types/react": "~18.2.14",
     "commitlint": "^17.7.1",
+    "expo-dev-client": "^2.4.10",
     "husky": "^8.0.3",
     "typescript": "^5.1.3"
   },

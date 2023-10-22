@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "@abelflopes/react-native-template",
-    "slug": "@abelflopes/react-native-template",
+    "name": "abelflopes-react-native-template",
+    "slug": "abelflopes-react-native-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,24 @@
     "plugins": ["expo-apple-authentication"],
     "ios": {
       "usesAppleSignIn": true,
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abelflopes.reactnativetemplate"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.abelflopes.reactnativetemplate"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dfdad69f-ddb1-4e50-9496-28e32758a5db"
+      }
     }
-  }
+  },
+  "scheme": "abelflopes-react-native-template"
 }

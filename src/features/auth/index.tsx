@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { AppleAuthButton } from "./components/AppleAuthButton";
+import { GoogleAuthButton } from "./components/GoogleAuthButton";
 
 /**
  * Check apple authentication docs
@@ -19,7 +20,11 @@ export const Auth = () => {
 
       <View style={{ height: 30 }} />
 
-      {appleToken && <Text>Apple Authenticated: {appleToken}</Text>}
+      <GoogleAuthButton />
+
+      <View style={{ height: 30 }} />
+
+      {appleToken && <Text>Apple Authenticated____: {appleToken}</Text>}
     </>
   );
 };
